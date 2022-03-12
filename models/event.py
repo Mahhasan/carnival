@@ -8,7 +8,7 @@ class Event(models.Model):
     _description = 'Event Table'
 
     name = fields.Char(string="Name")
-    main_banner = fields.Binary(string="Main Banner")
+    main_banner = fields.Binary(string="Main Banner", help="Select image here")
     number_of_stall = fields.Char(string="Number of Stall")
     start_date = fields.Date(string="Start Date")
     end_date = fields.Date(string="End Date")

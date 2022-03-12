@@ -19,6 +19,11 @@
             <field name="arch" type="xml">
                 <tree string="Event">
                     <field name="name"/>
+                    <field name="organizers"/>
+                    <field name="number_of_stall"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+<!--                    <field name="Status"/>-->
                 </tree>
             </field>
         </record>
@@ -29,22 +34,26 @@
             <field name="model">event</field>
             <field name="arch" type="xml">
                 <form string="Event">
-                    <group>
                         <group>
                             <field name="name"/>
                         </group>
+                    <group>
                         <group>
-                            <field name="main_banner"/>
+                            <field name="main_banner" optional="show" widget="image"/>
                         </group>
                         <group>
                             <field name="number_of_stall"/>
                         </group>
+                    </group>
+                    <group>
                         <group>
                             <field name="start_date"/>
                         </group>
                         <group>
                             <field name="end_date"/>
                         </group>
+                    </group>
+                    <group>
                          <group>
                             <field name="organizers"/>
                         </group>
