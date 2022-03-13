@@ -14,3 +14,6 @@ class Event(models.Model):
     end_date = fields.Date(string="End Date")
     organizers = fields.Char(string="Organizers")
     version = fields.Char(string="Version")
+
+    event_stalls_information_ids = fields.One2many('event.stalls.information', 'event_id', string="Stalls")
+    event_halls_information_ids = fields.One2many('event.halls.information', 'event_id', string="Halls")

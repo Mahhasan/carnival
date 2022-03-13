@@ -61,6 +61,24 @@
                             <field name="version"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page name="stalls_information" string="Stalls Information">
+                            <field name="event_stalls_information_ids">
+                                <tree string="Stalls Information">
+                                    <field name="name"/>
+                                    <field name="position"/>
+                                    <field name="number_of_counselor"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="halls_information" string="Halls Information">
+                            <field name="event_halls_information_ids">
+                                <tree string="Halls Information">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                 </form>
             </field>
         </record>

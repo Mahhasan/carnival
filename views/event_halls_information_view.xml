@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Search View-->
+        <record id="event_halls_information_search_view" model="ir.ui.view">
+            <field name="name">event.halls.information.search.view</field>
+            <field name="model">event.halls.information</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!--Tree View-->
+        <record id="event_halls_information_tree_view" model="ir.ui.view">
+            <field name="name">event.halls.information.tree.view</field>
+            <field name="model">event.halls.information</field>
+            <field name="arch" type="xml">
+                <tree string="Event Halls Information">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form View-->
+        <record id="event_halls_information_form_view" model="ir.ui.view">
+            <field name="name">event.halls.information.form.view</field>
+            <field name="model">event.halls.information</field>
+            <field name="arch" type="xml">
+                <form string="Event Halls Information">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="code"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="live_link"/>
+                        </group>
+                        <group>
+                            <field name="main_banner" optional="show" widget="image"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Act Window & Menu Configuration-->
+        <record id="action_event_halls_information_view" model="ir.actions.act_window">
+            <field name="name">Event Halls Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">event.halls.information</field>
+            <field name="domain">[]</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="event_halls_information_tree_view"/>
+        </record>
+
+    </data>
+</odoo>

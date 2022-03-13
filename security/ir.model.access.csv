@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_event,access_event,model_event,base.group_user,1,1,1,1
+access_event_stalls_information,access_event_stalls_information,model_event_stalls_information,base.group_user,1,1,1,1
+access_event_halls_information,access_event_halls_information,model_event_halls_information,base.group_user,1,1,1,1

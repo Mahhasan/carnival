@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Search View-->
+        <record id="event_stalls_information_search_view" model="ir.ui.view">
+            <field name="name">event.stalls.information.search.view</field>
+            <field name="model">event.stalls.information</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!--Tree View-->
+        <record id="event_stalls_information_tree_view" model="ir.ui.view">
+            <field name="name">event.stalls.information.tree.view</field>
+            <field name="model">event.stalls.information</field>
+            <field name="arch" type="xml">
+                <tree string="Event Stalls Information">
+                    <field name="name"/>
+                    <field name="position"/>
+                    <field name="number_of_counselor"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form View-->
+        <record id="event_stalls_information_form_view" model="ir.ui.view">
+            <field name="name">event.stalls.information.form.view</field>
+            <field name="model">event.stalls.information</field>
+            <field name="arch" type="xml">
+                <form string="Event Stalls Information">
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    <group>
+                        <group>
+                            <field name="exhibitor"/>
+                        </group>
+                        <group>
+                            <field name="generate_code"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="stall_logo" optional="show" widget="image"/>
+                        </group>
+                        <group>
+                            <field name="stall_view_live"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="stall_category"/>
+                        </group>
+                        <group>
+                            <field name="company_website"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="facebook"/>
+                        </group>
+                        <group>
+                            <field name="youtube"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="stall_type"/>
+                        </group>
+                        <group>
+                            <field name="stall_color"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="video_link"/>
+                        </group>
+                        <group>
+                            <field name="chatbot_channel"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="position"/>
+                        </group>
+                        <group>
+                            <field name="number_of_counselor"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="main_banner" optional="show" widget="image"/>
+                        </group>
+                        <group>
+                            <field name="counselor_code"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="exe_banner_1" optional="show" widget="image"/>
+                        </group>
+                        <group>
+                            <field name="exe_banner_2" optional="show" widget="image"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="left_banner" optional="show" widget="image"/>
+                        </group>
+                        <group>
+                            <field name="right_banner" optional="show" widget="image"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Act Window & Menu Configuration-->
+        <record id="action_event_stalls_information_view" model="ir.actions.act_window">
+            <field name="name">Event Stalls Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">event.stalls.information</field>
+            <field name="domain">[]</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="event_stalls_information_tree_view"/>
+        </record>
+
+    </data>
+</odoo>
