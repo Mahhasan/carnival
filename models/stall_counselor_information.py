@@ -7,6 +7,7 @@ class StallCounselorInformation(models.Model):
     _name = 'stall.counselor.information'
     _description = 'Stall Counselor Information'
 
+    event_id = fields.Many2one('event', string="Event")
     event_stalls_information_id = fields.Many2one('event.stalls.information', string="Stall")
     name = fields.Char(string="Name")
     login = fields.Char(string="Login")

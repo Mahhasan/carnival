@@ -21,6 +21,3 @@ class Event(models.Model):
     event_organizer_information_ids = fields.One2many('event.organizer.information', 'event_id', string="Organizer")
     event_judge_information_ids = fields.One2many('event.judge.information', 'event_id', string="Judge")
     event_rubrics_category_ids = fields.One2many('event.rubrics.category', 'event_id', string="Rubrics")
-    # stall_document_information_ids = fields.One2many('stall.document.information', 'event_id', string="Document")
-    # stall_gallery_information_ids = fields.One2many('stall.gallery.information', 'event_id', string="gallery")
-    # stall_video_information_ids = fields.One2many('stall.video.information', 'event_id', string="video")

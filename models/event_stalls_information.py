@@ -30,8 +30,12 @@ class EventStallsInformation(models.Model):
     left_banner = fields.Binary(string="Left Banner", help="Select image here")
     right_banner = fields.Binary(string="Right Banner", help="Select image here")
 
-    stall_document_information_ids = fields.One2many('stall.document.information', 'stalls_information_id', string="Document")
-    stall_video_information_ids = fields.One2many('stall.video.information', 'stalls_information_id', string="Video")
-    stall_gallery_information_ids = fields.One2many('stall.gallery.information', 'stalls_information_id', string="Gallery")
-    stall_counselor_information_ids = fields.One2many('stall.counselor.information', 'stalls_information_id', string="Counselor")
-    stall_rubrics_ids = fields.One2many('stall.rubrics', 'stalls_information_id', string="Rubrics")
+    stall_document_information_ids = fields.One2many('stall.document.information', 'event_stalls_information_id',
+                                                     string="Document Information")
+    stall_video_information_ids = fields.One2many('stall.video.information', 'event_stalls_information_id',
+                                                  string="Video Information")
+    stall_gallery_information_ids = fields.One2many('stall.gallery.information', 'event_stalls_information_id',
+                                                    string="Gallery Information")
+    stall_counselor_information_ids = fields.One2many('stall.counselor.information', 'event_stalls_information_id',
+                                                      string="Counselor Information")
+    stall_rubrics_ids = fields.One2many('stall.rubrics', 'event_stalls_information_id', string="Rubrics")

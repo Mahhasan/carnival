@@ -73,6 +73,5 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="stall_counselor_information_tree_view"/>
         </record>
-
     </data>
 </odoo>

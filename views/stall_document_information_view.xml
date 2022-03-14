@@ -29,14 +29,12 @@
             <field name="model">stall.document.information</field>
             <field name="arch" type="xml">
                 <form string="Stall Document Information">
-                    <group>
                         <group>
                             <field name="name"/>
                         </group>
                         <group>
                             <field name="file"/>
                         </group>
-                    </group>
                 </form>
             </field>
         </record>
