@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Search View-->
+        <record id="event_ads_information_search_view" model="ir.ui.view">
+            <field name="name">event.ads.information.search.view</field>
+            <field name="model">event.ads.information</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!--Tree View-->
+        <record id="event_ads_information_tree_view" model="ir.ui.view">
+            <field name="name">event.ads.information.tree.view</field>
+            <field name="model">event.ads.information</field>
+            <field name="arch" type="xml">
+                <tree string="Event Ads Information">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form View-->
+        <record id="event_ads_information_form_view" model="ir.ui.view">
+            <field name="name">event.ads.information.form.view</field>
+            <field name="model">event.ads.information</field>
+            <field name="arch" type="xml">
+                <form string="Event Ads Information">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="main_banner" optional="show" widget="image"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Act Window & Menu Configuration-->
+        <record id="action_event_ads_information_view" model="ir.actions.act_window">
+            <field name="name">Event Ads Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">event.ads.information</field>
+            <field name="domain">[]</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="event_ads_information_tree_view"/>
+        </record>
+
+    </data>
+</odoo>

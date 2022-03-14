@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Search View-->
+        <record id="stall_document_information_search_view" model="ir.ui.view">
+            <field name="name">stall.document.information.search.view</field>
+            <field name="model">stall.document.information</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!--Tree View-->
+        <record id="stall_document_information_tree_view" model="ir.ui.view">
+            <field name="name">stall.document.information.tree.view</field>
+            <field name="model">stall.document.information</field>
+            <field name="arch" type="xml">
+                <tree string="Stall Document Information">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form View-->
+        <record id="stall_document_information_form_view" model="ir.ui.view">
+            <field name="name">stall.document.information.form.view</field>
+            <field name="model">stall.document.information</field>
+            <field name="arch" type="xml">
+                <form string="Stall Document Information">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="file"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Act Window & Menu Configuration-->
+        <record id="action_stall_document_information_view" model="ir.actions.act_window">
+            <field name="name">Stall Document Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">stall.document.information</field>
+            <field name="domain">[]</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="stall_document_information_tree_view"/>
+        </record>
+
+    </data>
+</odoo>

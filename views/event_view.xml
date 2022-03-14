@@ -39,7 +39,7 @@
                         </group>
                     <group>
                         <group>
-                            <field name="main_banner" optional="show" widget="image"/>
+                            <field name="main_banner" optional="show" widget="image" height="100" width="150"/>
                         </group>
                         <group>
                             <field name="number_of_stall"/>
@@ -75,6 +75,47 @@
                             <field name="event_halls_information_ids">
                                 <tree string="Halls Information">
                                     <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="ads_information" string="Ads Information">
+                            <field name="event_ads_information_ids">
+                                <tree string="Ads Information">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="organizer_information" string="Organizer Information">
+                            <field name="event_organizer_information_ids">
+                                <tree string="Organizer Information">
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="password"/>
+                                    <field name="phone"/>
+                                    <field name="user_type"/>
+                                    <field name="groups"/>
+                                    <field name="time_zone"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="judge_information" string="Judge Information">
+                            <field name="event_judge_information_ids">
+                                <tree string="Judge Information">
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="password"/>
+                                    <field name="phone"/>
+                                    <field name="user_type"/>
+                                    <field name="groups"/>
+                                    <field name="time_zone"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="rubrics_category" string="Rubrics Category">
+                            <field name="event_rubrics_category_ids">
+                                <tree string="Rubrics Category">
+                                    <field name="name"/>
+                                    <field name="marking_out_of"/>
                                 </tree>
                             </field>
                         </page>

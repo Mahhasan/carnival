@@ -114,6 +114,52 @@
                             <field name="right_banner" optional="show" widget="image"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page name="document_information" string="Document Information">
+                            <field name="stall_document_information_ids">
+                                <tree string="Document Information">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="video_information" string="Video Information">
+                            <field name="stall_video_information_ids">
+                                <tree string="Video Information">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="gallery_information" string="Gallery Information">
+                            <field name="stall_gallery_information_ids">
+                                <tree string="Gallery Information">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="counselor_information" string="Counselor Information">
+                            <field name="stall_counselor_information_ids">
+                                <tree string="Counselor Information">
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="password"/>
+                                     <field name="user_type"/>
+                                    <field name="phone"/>
+                                    <field name="counselor_code"/>
+                                    <field name="groups"/>
+                                    <field name="time_zone"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="rubrics" string="Rubrics">
+                            <field name="stall_rubrics_ids">
+                                <tree string="Rubrics">
+                                    <field name="event_stalls_information_ids"/>
+                                    <field name="name"/>
+                                    <field name="marks"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                 </form>
             </field>
         </record>

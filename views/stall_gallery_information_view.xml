@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Search View-->
+        <record id="stall_gallery_information_search_view" model="ir.ui.view">
+            <field name="name">stall.gallery.information.search.view</field>
+            <field name="model">stall.gallery.information</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!--Tree View-->
+        <record id="stall_gallery_information_tree_view" model="ir.ui.view">
+            <field name="name">stall.gallery.information.tree.view</field>
+            <field name="model">stall.gallery.information</field>
+            <field name="arch" type="xml">
+                <tree string="Stall Gallery Information">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form View-->
+        <record id="stall_gallery_information_form_view" model="ir.ui.view">
+            <field name="name">stall.gallery.information.form.view</field>
+            <field name="model">stall.gallery.information</field>
+            <field name="arch" type="xml">
+                <form string="Stall Gallery Information">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="file"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Act Window & Menu Configuration-->
+        <record id="action_stall_gallery_information_view" model="ir.actions.act_window">
+            <field name="name">Stall Gallery Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">stall.gallery.information</field>
+            <field name="domain">[]</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="stall_gallery_information_tree_view"/>
+        </record>
+
+    </data>
+</odoo>

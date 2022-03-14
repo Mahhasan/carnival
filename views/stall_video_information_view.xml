@@ -2,9 +2,9 @@
 <odoo>
     <data>
         <!--Search View-->
-        <record id="event_rubrics_category_search_view" model="ir.ui.view">
-            <field name="name">event.rubrics.category.search.view</field>
-            <field name="model">event.rubrics.category</field>
+        <record id="stall_video_information_search_view" model="ir.ui.view">
+            <field name="name">stall.video.information.search.view</field>
+            <field name="model">stall.video.information</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -13,28 +13,28 @@
         </record>
 
         <!--Tree View-->
-        <record id="event_rubrics_category_tree_view" model="ir.ui.view">
-            <field name="name">event.rubrics.category.tree.view</field>
-            <field name="model">event.rubrics.category</field>
+        <record id="stall_video_information_tree_view" model="ir.ui.view">
+            <field name="name">stall.video.information.tree.view</field>
+            <field name="model">stall.video.information</field>
             <field name="arch" type="xml">
-                <tree string="Event Rubrics Category">
+                <tree string="Stall Video Information">
                     <field name="name"/>
                 </tree>
             </field>
         </record>
 
         <!--Form View-->
-        <record id="event_rubrics_category_form_view" model="ir.ui.view">
-            <field name="name">event.rubrics.category.form.view</field>
-            <field name="model">event.rubrics.category</field>
+        <record id="stall_video_information_form_view" model="ir.ui.view">
+            <field name="name">stall.video.information.form.view</field>
+            <field name="model">stall.video.information</field>
             <field name="arch" type="xml">
-                <form string="Event Rubrics Category">
+                <form string="Stall Video Information">
                     <group>
                         <group>
                             <field name="name"/>
                         </group>
                         <group>
-                            <field name="marking_out_of"/>
+                            <field name="file"/>
                         </group>
                     </group>
                 </form>
@@ -42,14 +42,14 @@
         </record>
 
         <!--Act Window & Menu Configuration-->
-        <record id="action_event_rubrics_category_view" model="ir.actions.act_window">
-            <field name="name">Event Rubrics Category</field>
+        <record id="action_stall_video_information_view" model="ir.actions.act_window">
+            <field name="name">Stall Video Information</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">event.rubrics.category</field>
+            <field name="res_model">stall.video.information</field>
             <field name="domain">[]</field>
             <!-- <field name="view_type">form</field> -->
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="event_rubrics_category_tree_view"/>
+            <field name="view_id" ref="stall_video_information_tree_view"/>
         </record>
 
     </data>

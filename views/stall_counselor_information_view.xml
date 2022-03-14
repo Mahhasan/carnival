@@ -1,11 +1,10 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
         <!--Search View-->
-        <record id="event_organizer_information_search_view" model="ir.ui.view">
-            <field name="name">event.organizer.information.search.view</field>
-            <field name="model">event.organizer.information</field>
+        <record id="stall_counselor_information_search_view" model="ir.ui.view">
+            <field name="name">stall.counselor.information.search.view</field>
+            <field name="model">stall.counselor.information</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -14,22 +13,22 @@
         </record>
 
         <!--Tree View-->
-        <record id="event_organizer_information_tree_view" model="ir.ui.view">
-            <field name="name">event.organizer.information.tree.view</field>
-            <field name="model">event.organizer.information</field>
+        <record id="stall_counselor_information_tree_view" model="ir.ui.view">
+            <field name="name">stall.counselor.information.tree.view</field>
+            <field name="model">stall.counselor.information</field>
             <field name="arch" type="xml">
-                <tree string="Event Organizer Information">
+                <tree string="Stall Counselor Information">
                     <field name="name"/>
                 </tree>
             </field>
         </record>
 
         <!--Form View-->
-        <record id="event_organizer_information_form_view" model="ir.ui.view">
-            <field name="name">event.organizer.information.form.view</field>
-            <field name="model">event.organizer.information</field>
+        <record id="stall_counselor_information_form_view" model="ir.ui.view">
+            <field name="name">stall.counselor.information.form.view</field>
+            <field name="model">stall.counselor.information</field>
             <field name="arch" type="xml">
-                <form string="Event Organizer Information">
+                <form string="Stall Counselor Information">
                     <group>
                         <group>
                             <field name="name"/>
@@ -43,12 +42,15 @@
                             <field name="password"/>
                         </group>
                         <group>
+                            <field name="user_type"/>
+                        </group>
+                        <group>
                             <field name="phone"/>
                         </group>
                     </group>
                     <group>
                         <group>
-                            <field name="user_type"/>
+                            <field name="counselor_code"/>
                         </group>
                         <group>
                             <field name="groups"/>
@@ -62,14 +64,14 @@
         </record>
 
         <!--Act Window & Menu Configuration-->
-        <record id="action_event_organizer_information_view" model="ir.actions.act_window">
-            <field name="name">Event Organizer Information</field>
+        <record id="action_stall_counselor_information_view" model="ir.actions.act_window">
+            <field name="name">Stall Counselor Information</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">event.organizer.information</field>
+            <field name="res_model">stall.counselor.information</field>
             <field name="domain">[]</field>
             <!-- <field name="view_type">form</field> -->
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="event_organizer_information_tree_view"/>
+            <field name="view_id" ref="stall_counselor_information_tree_view"/>
         </record>
 
     </data>
