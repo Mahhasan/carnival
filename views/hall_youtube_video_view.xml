@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Search View-->
+        <record id="hall_youtube_video_search_view" model="ir.ui.view">
+            <field name="name">hall.youtube.video.search.view</field>
+            <field name="model">hall.youtube.video</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!--Tree View-->
+        <record id="hall_youtube_video_tree_view" model="ir.ui.view">
+            <field name="name">hall.youtube.video.tree.view</field>
+            <field name="model">hall.youtube.video</field>
+            <field name="arch" type="xml">
+                <tree string="Hall Youtube Video">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form View-->
+        <record id="hall_youtube_video_form_view" model="ir.ui.view">
+            <field name="name">hall.youtube.video.form.view</field>
+            <field name="model">hall.youtube.video</field>
+            <field name="arch" type="xml">
+                <form string="Hall Youtube Video">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="youtube_link"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Act Window & Menu Configuration-->
+        <record id="action_hall_youtube_video_view" model="ir.actions.act_window">
+            <field name="name">Hall Youtube Video</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hall.youtube.video</field>
+            <field name="domain">[]</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="hall_youtube_video_tree_view"/>
+        </record>
+    </data>
+</odoo>

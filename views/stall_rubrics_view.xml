@@ -7,18 +7,17 @@
             <field name="model">stall.rubrics</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="name"/>
+                    <field name="rubrics_category"/>
                 </search>
             </field>
         </record>
-
         <!--Tree View-->
         <record id="stall_rubrics_tree_view" model="ir.ui.view">
             <field name="name">stall.rubrics.tree.view</field>
             <field name="model">stall.rubrics</field>
             <field name="arch" type="xml">
                 <tree string="Stall Rubrics">
-                    <field name="name"/>
+                    <field name="rubrics_category"/>
                 </tree>
             </field>
         </record>
@@ -31,7 +30,7 @@
                 <form string="Stall Rubrics">
                     <group>
                         <group>
-                            <field name="name"/>
+                            <field name="rubrics_category"/>
                         </group>
                         <group>
                             <field name="marks"/>

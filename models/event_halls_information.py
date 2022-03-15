@@ -12,3 +12,7 @@ class EventHallsInformation(models.Model):
     code = fields.Char(string="Code")
     live_link = fields.Char(string="Live Link")
     main_banner = fields.Binary(string="Main Banner", help="Select image here")
+
+    hall_youtube_video_ids = fields.One2many('hall.youtube.video', 'event_halls_information_id', string="Youtube Video")
+    hall_gallery_ids = fields.One2many('hall.gallery', 'event_halls_information_id', string="Gallery")
+    hall_live_link_ids = fields.One2many('hall.live.link', 'event_halls_information_id', string="Live Link")

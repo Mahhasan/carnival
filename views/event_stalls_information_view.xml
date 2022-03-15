@@ -45,7 +45,7 @@
                         </group>
                         <group>
                             <group>
-                                <field name="stall_logo" optional="show" widget="image"/>
+                                <field name="stall_logo" optional="show" widget="image" height="100" width="150"/>
                             </group>
                             <group>
                                 <field name="stall_view_live"/>
@@ -93,7 +93,7 @@
                         </group>
                         <group>
                             <group>
-                                <field name="main_banner" optional="show" widget="image"/>
+                                <field name="main_banner" optional="show" widget="image" height="100" width="150"/>
                             </group>
                             <group>
                                 <field name="counselor_code"/>
@@ -101,18 +101,18 @@
                         </group>
                         <group>
                             <group>
-                                <field name="exe_banner_1" optional="show" widget="image"/>
+                                <field name="exe_banner_1" optional="show" widget="image" height="100" width="150"/>
                             </group>
                             <group>
-                                <field name="exe_banner_2" optional="show" widget="image"/>
+                                <field name="exe_banner_2" optional="show" widget="image" height="100" width="150"/>
                             </group>
                         </group>
                         <group>
                             <group>
-                                <field name="left_banner" optional="show" widget="image"/>
+                                <field name="left_banner" optional="show" widget="image" height="100" width="150"/>
                             </group>
                             <group>
-                                <field name="right_banner" optional="show" widget="image"/>
+                                <field name="right_banner" optional="show" widget="image" height="100" width="150"/>
                             </group>
                         </group>
                         <notebook>
@@ -154,7 +154,9 @@
                             <page name="rubrics" string="Rubrics">
                                 <field name="stall_rubrics_ids">
                                     <tree string="Rubrics">
+                                        <field name="event_stalls_information_id"/>
                                         <field name="marks"/>
+                                        <field name="rubrics_category"/>
                                     </tree>
                                 </field>
                             </page>

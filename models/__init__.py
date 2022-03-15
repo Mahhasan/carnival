@@ -13,3 +13,6 @@ from . import stall_video_information
 from . import stall_gallery_information
 from . import stall_counselor_information
 from . import stall_rubrics
+from . import hall_youtube_video
+from . import hall_gallery
+from . import hall_live_link

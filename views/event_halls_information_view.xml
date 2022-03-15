@@ -29,22 +29,50 @@
             <field name="model">event.halls.information</field>
             <field name="arch" type="xml">
                 <form string="Event Halls Information">
-                    <group>
+                    <sheet>
                         <group>
-                            <field name="name"/>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="code"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="code"/>
+                            <group>
+                                <field name="live_link"/>
+                            </group>
+                            <group>
+                                <field name="main_banner" optional="show" widget="image"/>
+                            </group>
                         </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="live_link"/>
-                        </group>
-                        <group>
-                            <field name="main_banner" optional="show" widget="image"/>
-                        </group>
-                    </group>
+                        <notebook>
+                            <page name="youtube_video" string="Youtube Video">
+                                <field name="hall_youtube_video_ids">
+                                    <tree string="Youtube Video">
+                                        <field name="name"/>
+                                        <field name="youtube_link"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="gallery" string="Gallery">
+                                <field name="hall_gallery_ids">
+                                    <tree string="Gallery">
+                                        <field name="name"/>
+                                        <field name="image"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="live_link" string="Live Link">
+                                <field name="hall_live_link_ids">
+                                    <tree string="Live Link">
+                                        <field name="name"/>
+                                        <field name="live_link"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
                 </form>
             </field>
         </record>

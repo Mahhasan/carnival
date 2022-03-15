@@ -11,3 +11,6 @@ access_stall_video_information,access_stall_video_information,model_stall_video_
 access_stall_gallery_information,access_stall_gallery_information,model_stall_gallery_information,base.group_user,1,1,1,1
 access_stall_counselor_information,access_stall_counselor_information,model_stall_counselor_information,base.group_user,1,1,1,1
 access_stall_rubrics,access_stall_rubrics,model_stall_rubrics,base.group_user,1,1,1,1
+access_hall_youtube_video,access_hall_youtube_video,model_hall_youtube_video,base.group_user,1,1,1,1
+access_hall_gallery,access_hall_gallery,model_hall_gallery,base.group_user,1,1,1,1
+access_hall_live_link,access_hall_live_link,model_hall_live_link,base.group_user,1,1,1,1
