@@ -31,135 +31,137 @@
             <field name="model">event.stalls.information</field>
             <field name="arch" type="xml">
                 <form string="Event Stalls Information">
+                    <sheet>
                         <group>
                             <field name="name"/>
                         </group>
-                    <group>
                         <group>
-                            <field name="exhibitor"/>
+                            <group>
+                                <field name="exhibitor"/>
+                            </group>
+                            <group>
+                                <field name="generate_code"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="generate_code"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="stall_logo" optional="show" widget="image"/>
-                        </group>
-                        <group>
-                            <field name="stall_view_live"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="stall_category"/>
+                            <group>
+                                <field name="stall_logo" optional="show" widget="image"/>
+                            </group>
+                            <group>
+                                <field name="stall_view_live"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="company_website"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="facebook"/>
-                        </group>
-                        <group>
-                            <field name="youtube"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="stall_type"/>
+                            <group>
+                                <field name="stall_category"/>
+                            </group>
+                            <group>
+                                <field name="company_website"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="stall_color"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="video_link"/>
-                        </group>
-                        <group>
-                            <field name="chatbot_channel"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="position"/>
+                            <group>
+                                <field name="facebook"/>
+                            </group>
+                            <group>
+                                <field name="youtube"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="number_of_counselor"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="main_banner" optional="show" widget="image"/>
-                        </group>
-                        <group>
-                            <field name="counselor_code"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="exe_banner_1" optional="show" widget="image"/>
+                            <group>
+                                <field name="stall_type"/>
+                            </group>
+                            <group>
+                                <field name="stall_color"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="exe_banner_2" optional="show" widget="image"/>
+                            <group>
+                                <field name="video_link"/>
+                            </group>
+                            <group>
+                                <field name="chatbot_channel"/>
+                            </group>
                         </group>
-                    </group>
-                    <group>
                         <group>
-                            <field name="left_banner" optional="show" widget="image"/>
+                            <group>
+                                <field name="position"/>
+                            </group>
+                            <group>
+                                <field name="number_of_counselor"/>
+                            </group>
                         </group>
                         <group>
-                            <field name="right_banner" optional="show" widget="image"/>
+                            <group>
+                                <field name="main_banner" optional="show" widget="image"/>
+                            </group>
+                            <group>
+                                <field name="counselor_code"/>
+                            </group>
                         </group>
-                    </group>
-                    <notebook>
-                        <page name="document_information" string="Document Information">
-                            <field name="stall_document_information_ids">
-                                <tree string="Document Information">
-                                    <field name="name"/>
-                                </tree>
-                            </field>
-                        </page>
-                        <page name="video_information" string="Video Information">
-                            <field name="stall_video_information_ids">
-                                <tree string="Video Information">
-                                    <field name="name"/>
-                                </tree>
-                            </field>
-                        </page>
-                        <page name="gallery_information" string="Gallery Information">
-                            <field name="stall_gallery_information_ids">
-                                <tree string="Gallery Information">
-                                    <field name="name"/>
-                                </tree>
-                            </field>
-                        </page>
-                        <page name="counselor_information" string="Counselor Information">
-                            <field name="stall_counselor_information_ids">
-                                <tree string="Counselor Information">
-                                    <field name="name"/>
-                                    <field name="login"/>
-                                    <field name="password"/>
-                                     <field name="user_type"/>
-                                    <field name="phone"/>
-                                    <field name="counselor_code"/>
-                                    <field name="groups"/>
-                                    <field name="time_zone"/>
-                                </tree>
-                            </field>
-                        </page>
-                        <page name="rubrics" string="Rubrics">
-                            <field name="stall_rubrics_ids">
-                                <tree string="Rubrics">
-                                    <field name="stall_rubrics_ids"/>
-                                    <field name="name"/>
-                                    <field name="marks"/>
-                                </tree>
-                            </field>
-                        </page>
-                    </notebook>
+                        <group>
+                            <group>
+                                <field name="exe_banner_1" optional="show" widget="image"/>
+                            </group>
+                            <group>
+                                <field name="exe_banner_2" optional="show" widget="image"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="left_banner" optional="show" widget="image"/>
+                            </group>
+                            <group>
+                                <field name="right_banner" optional="show" widget="image"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="document_information" string="Document Information">
+                                <field name="stall_document_information_ids">
+                                    <tree string="Document Information">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="video_information" string="Video Information">
+                                <field name="stall_video_information_ids">
+                                    <tree string="Video Information">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="gallery_information" string="Gallery Information">
+                                <field name="stall_gallery_information_ids">
+                                    <tree string="Gallery Information">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="counselor_information" string="Counselor Information">
+                                <field name="stall_counselor_information_ids">
+                                    <tree string="Counselor Information">
+                                        <field name="name"/>
+                                        <field name="login"/>
+                                        <field name="password"/>
+                                        <field name="user_type"/>
+                                        <field name="phone"/>
+                                        <field name="counselor_code"/>
+                                        <field name="groups"/>
+                                        <field name="time_zone"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="rubrics" string="Rubrics">
+                                <field name="stall_rubrics_ids">
+                                    <tree string="Rubrics">
+                                        <field name="stall_rubrics_ids"/>
+                                        <field name="name"/>
+                                        <field name="marks"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
                 </form>
             </field>
         </record>
