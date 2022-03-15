@@ -154,8 +154,6 @@
                             <page name="rubrics" string="Rubrics">
                                 <field name="stall_rubrics_ids">
                                     <tree string="Rubrics">
-                                        <field name="stall_rubrics_ids"/>
-                                        <field name="name"/>
                                         <field name="marks"/>
                                     </tree>
                                 </field>

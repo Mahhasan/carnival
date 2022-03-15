@@ -26,6 +26,7 @@
     'data': [
         'security/ir.model.access.csv',
 
+        'views/event_stalls_information_view.xml',
         'views/event_view.xml',
         'views/menus.xml',
     ],

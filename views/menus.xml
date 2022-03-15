@@ -13,6 +13,7 @@
                    action="action_event_view"
             sequence="100" />
 
+
     </data>
 </odoo>
 
