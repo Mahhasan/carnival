@@ -10,5 +10,5 @@ class StallRubrics(models.Model):
     event_id = fields.Many2one('event', string="Event")
     event_stalls_information_id = fields.Many2one('event.stalls.information', string="Stall")
     rubrics_category = fields.Char(string="Rubrics Category")
-    marks = fields.Binary(string="Marks")
+    marks = fields.Char(string="Marks")
 

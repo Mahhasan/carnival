@@ -43,13 +43,13 @@
                                 <field name="live_link"/>
                             </group>
                             <group>
-                                <field name="main_banner" optional="show" widget="image"/>
+                                <field name="main_banner" optional="show" widget="image" height="150" width="150"/>
                             </group>
                         </group>
                         <notebook>
                             <page name="youtube_video" string="Youtube Video">
                                 <field name="hall_youtube_video_ids">
-                                    <tree string="Youtube Video">
+                                    <tree string="Youtube Video" editable="bottom">
                                         <field name="name"/>
                                         <field name="youtube_link"/>
                                     </tree>
@@ -57,7 +57,7 @@
                             </page>
                             <page name="gallery" string="Gallery">
                                 <field name="hall_gallery_ids">
-                                    <tree string="Gallery">
+                                    <tree string="Gallery" editable="bottom">
                                         <field name="name"/>
                                         <field name="image"/>
                                     </tree>
@@ -65,7 +65,7 @@
                             </page>
                             <page name="live_link" string="Live Link">
                                 <field name="hall_live_link_ids">
-                                    <tree string="Live Link">
+                                    <tree string="Live Link" editable="bottom">
                                         <field name="name"/>
                                         <field name="live_link"/>
                                     </tree>

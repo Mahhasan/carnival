@@ -139,7 +139,7 @@
                             </page>
                             <page name="counselor_information" string="Counselor Information">
                                 <field name="stall_counselor_information_ids">
-                                    <tree string="Counselor Information">
+                                    <tree string="Counselor Information" editable="bottom">
                                         <field name="name"/>
                                         <field name="login"/>
                                         <field name="password"/>
@@ -153,7 +153,7 @@
                             </page>
                             <page name="rubrics" string="Rubrics">
                                 <field name="stall_rubrics_ids">
-                                    <tree string="Rubrics">
+                                    <tree string="Rubrics" editable="bottom">
                                         <field name="event_stalls_information_id"/>
                                         <field name="marks"/>
                                         <field name="rubrics_category"/>

@@ -36,7 +36,7 @@
                 <form string="Event">
                     <sheet>
                         <group>
-                            <field name="name"/>
+                            <p>Name<h1 style="background-color:MediumPurple"><field name="name"/></h1></p>
                         </group>
                         <group>
                             <group>
@@ -88,7 +88,7 @@
                             </page>
                             <page name="organizer_information" string="Organizer Information">
                                 <field name="event_organizer_information_ids">
-                                    <tree string="Organizer Information">
+                                    <tree editable="bottom " string="Organizer Information">
                                         <field name="name"/>
                                         <field name="login"/>
                                         <field name="password"/>
@@ -101,7 +101,7 @@
                             </page>
                             <page name="judge_information" string="Judge Information">
                                 <field name="event_judge_information_ids">
-                                    <tree string="Judge Information">
+                                    <tree string="Judge Information" editable="bottom">
                                         <field name="name"/>
                                         <field name="login"/>
                                         <field name="password"/>
@@ -114,7 +114,7 @@
                             </page>
                             <page name="rubrics_category" string="Rubrics Category">
                                 <field name="event_rubrics_category_ids">
-                                    <tree string="Rubrics Category">
+                                    <tree string="Rubrics Category" editable="bottom">
                                         <field name="name"/>
                                         <field name="marking_out_of"/>
                                     </tree>

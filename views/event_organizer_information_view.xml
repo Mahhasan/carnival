@@ -24,41 +24,41 @@
         </record>
 
         <!--Form View-->
-        <record id="event_organizer_information_form_view" model="ir.ui.view">
-            <field name="name">event.organizer.information.form.view</field>
-            <field name="model">event.organizer.information</field>
-            <field name="arch" type="xml">
-                <form string="Event Organizer Information">
-                    <group>
-                        <group>
-                            <field name="name"/>
-                        </group>
-                        <group>
-                            <field name="login"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="password"/>
-                        </group>
-                        <group>
-                            <field name="phone"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="user_type"/>
-                        </group>
-                        <group>
-                            <field name="groups"/>
-                        </group>
-                    </group>
-                        <group>
-                            <field name="time_zone"/>
-                        </group>
-                </form>
-            </field>
-        </record>
+<!--        <record id="event_organizer_information_form_view" model="ir.ui.view">-->
+<!--            <field name="name">event.organizer.information.form.view</field>-->
+<!--            <field name="model">event.organizer.information</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <form string="Event Organizer Information">-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                            <field name="name"/>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                            <field name="login"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                            <field name="password"/>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                            <field name="phone"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                            <field name="user_type"/>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                            <field name="groups"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                        <group>-->
+<!--                            <field name="time_zone"/>-->
+<!--                        </group>-->
+<!--                </form>-->
+<!--            </field>-->
+<!--        </record>-->
 
         <!--Act Window & Menu Configuration-->
         <record id="action_event_organizer_information_view" model="ir.actions.act_window">
