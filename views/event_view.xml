@@ -36,7 +36,7 @@
                 <form string="Event">
                     <sheet>
                         <group>
-                            <p>Name<h1 style="background-color:MediumPurple"><field name="name"/></h1></p>
+                            <p>Name <h1 style="background-color:MediumPurple"><field name="name"/></h1></p>
                         </group>
                         <group>
                             <group>
